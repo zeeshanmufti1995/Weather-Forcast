@@ -39,9 +39,25 @@ main {
     margin-top: 10px;
    
 }
+
 .card-header{
     background-color: #B9C2CA;
 }
+
+
+.row {
+    justify-content: center;
+}
+
+.name {
+    font-size: 25px;
+  
+   
+}
 .card-body {
     background-color:#E8EBED;
+}
+.space {
+    margin: 0 5px;
+    background-color: #B9C2CA;
 }
