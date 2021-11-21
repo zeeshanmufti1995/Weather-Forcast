@@ -15,7 +15,22 @@
         <h1>Weather Dashboard <i class="fas fa-cloud-sun-rain"></i></h1>
            </header>
 
+        <aside class="col-4">
+        <h2>Search for a City:</h2>
+        <!--search bar for cities-->
+        <div class="input-group mb-3">
+            <input type="text" class="search form-control col-5" placeholder="" aria-label="" aria-describedby="basic-addon1"></input>
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary searchBtn" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
 
+        <!--displays stored searches-->
+        <div class="col-11">
+            <div id="storedSearches" class="list-group"></div>
+        </div>
+        
+    </aside>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
     <script src="./assets/js/script.js"></script>
