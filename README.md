@@ -2,12 +2,12 @@
 An easy to use weather application for the user to search a city name and see the current weather, as well as the forecast for the next five days.
 
 ## Build
-Bootstrap
-HTML
-CSS
-JavaScript
-jQuery
-Web API https://openweathermap.org/api
+ Bootstrap
+ HTML
+ CSS
+ JavaScript
+ jQuery 
+ Web API https://openweathermap.org/api
 
 ## Tool used
     VsCode 
