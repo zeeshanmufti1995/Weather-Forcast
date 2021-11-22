@@ -92,6 +92,63 @@ function fetchWeather(){
             var windValue = data.current.wind_speed;
             $('.wind').text('Wind Speed: ' + windValue + 'mph');
 
+             //forecast tomorrow
+             var dates = data.daily[1].dt;
+             var forecastDates = new Date(dates*1000).toLocaleDateString('en-US');
+             $('#dateOne').text(forecastDates);
+             var forecastWeatherIcon = data.daily[1].weather[0].icon;
+             $('#weatherIconOne').attr('src', 'http://openweathermap.org/img/wn/' + forecastWeatherIcon + '@2x.png');
+             var forecastTemp = data.daily[1].temp.day;
+             $('#tempOne').text('Temperature: ' + Math.round(forecastTemp) + '° F');
+             var forecastHumidity = data.daily[1].humidity;
+             $('#humidityOne').text('Humidity: ' + forecastHumidity + '%');
+
+
+              //forecast day 2
+                    var dates = data.daily[2].dt;
+                    var forecastDates = new Date(dates*1000).toLocaleDateString('en-US');
+                    $('#dateTwo').text(forecastDates);
+                    var forecastWeatherIcon = data.daily[2].weather[0].icon;
+                    $('#weatherIconTwo').attr('src', 'http://openweathermap.org/img/wn/' + forecastWeatherIcon + '@2x.png');
+                    var forecastTemp = data.daily[2].temp.day;
+                    $('#tempTwo').text('Temperature: ' + Math.round(forecastTemp) + '° F');
+                    var forecastHumidity = data.daily[2].humidity;
+                    $('#humidityTwo').text('Humidity: ' + forecastHumidity + '%');
+
+                    //forecast day 3
+                    var dates = data.daily[3].dt;
+                    var forecastDates = new Date(dates*1000).toLocaleDateString('en-US');
+                    $('#dateThree').text(forecastDates);
+                    var forecastWeatherIcon = data.daily[3].weather[0].icon;
+                    $('#weatherIconThree').attr('src', 'http://openweathermap.org/img/wn/' + forecastWeatherIcon + '@2x.png');
+                    var forecastTemp = data.daily[3].temp.day;
+                    $('#tempThree').text('Temperature: ' + Math.round(forecastTemp) + '° F');
+                    var forecastHumidity = data.daily[3].humidity;
+                    $('#humidityThree').text('Humidity: ' + forecastHumidity + '%');
+
+                     //forecast day 4
+                     var dates = data.daily[4].dt;
+                     var forecastDates = new Date(dates*1000).toLocaleDateString('en-US');
+                     $('#dateFour').text(forecastDates);
+                     var forecastWeatherIcon = data.daily[4].weather[0].icon;
+                     $('#weatherIconFour').attr('src', 'http://openweathermap.org/img/wn/' + forecastWeatherIcon + '@2x.png');
+                     var forecastTemp = data.daily[4].temp.day;
+                     $('#tempFour').text('Temperature: ' + Math.round(forecastTemp) + '° F');
+                     var forecastHumidity = data.daily[4].humidity;
+                     $('#humidityFour').text('Humidity: ' + forecastHumidity + '%');
+
+                     //forecast day 5
+                    var dates = data.daily[5].dt;
+                    var forecastDates = new Date(dates*1000).toLocaleDateString('en-US');
+                    $('#dateFive').text(forecastDates);
+                    var forecastWeatherIcon = data.daily[5].weather[0].icon;
+                    $('#weatherIconFive').attr('src', 'http://openweathermap.org/img/wn/' + forecastWeatherIcon + '@2x.png');
+                    var forecastTemp = data.daily[5].temp.day;
+                    $('#tempFive').text('Temperature: ' + Math.round(forecastTemp) + '° F');
+                    var forecastHumidity = data.daily[5].humidity;
+                    $('#humidityFive').text('Humidity: ' + forecastHumidity + '%');
+ 
+
             })
-            
+
 
