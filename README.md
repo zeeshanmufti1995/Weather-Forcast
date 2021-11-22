@@ -10,8 +10,8 @@ jQuery
 Web API https://openweathermap.org/api
 
 ## Tool used
-Vs Code
-Github
+    VsCode 
+    Github
 
 ## Screen Shot
 
