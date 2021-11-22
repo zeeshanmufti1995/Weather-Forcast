@@ -26,6 +26,7 @@ aside {
     margin-top: 10px;
 }
 h2{
+   
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 main {
@@ -42,6 +43,7 @@ main {
 
 .card-header{
     background-color: #B9C2CA;
+    padding: 20px;
 }
 
 
